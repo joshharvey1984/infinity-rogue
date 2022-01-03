@@ -23,6 +23,7 @@ namespace InfinityRogue {
         [SerializeField] private int MaxRooms;
         [SerializeField] private int MaxX;
         [SerializeField] private int MaxY;
+        [SerializeField] private float EncounterChance;
 
 
 
@@ -47,7 +48,8 @@ namespace InfinityRogue {
                 MaxX = MaxX,
                 MaxY = MaxY,
                 MinRooms = MinRooms,
-                MaxRooms = MaxRooms
+                MaxRooms = MaxRooms,
+                EncounterChance = EncounterChance
             };
             dungeon = new Dungeon(dungeonParams);
             foreach (var room in dungeon.Levels[0].Rooms) { 

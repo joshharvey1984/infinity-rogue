@@ -5,5 +5,6 @@
         public int MaxY;
         public int MinRooms;
         public int MaxRooms;
+        public float EncounterChance;
     }
 }
